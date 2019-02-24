@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+h1 {
+    font-size: 3.75rem;
+    font-size: 60px;
+}
+h2 {
+    font-size: 3rem;
+    font-size: 48px;
+}
+h3 {
+    font-size: 1.75rem;
+    font-size: 28px;
+}
+h2.section-header {
+    padding-top: 1.5em;
+    text-align: center;
+}
+h2.section-header::after {
+    border-top: 5px solid #00c1d1;
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 45px;
+    max-width: 150px;
+}
+.wrapper > .flex {
+    margin-bottom: 90px;
+}
+.primary-content {
+    position: relative;
+}
+.text-bg {
+    margin: auto;
+    max-width: 992px;
+    background-image: url("../img/recruitment-textBG.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.content {
+    background: rgba(0,0,0,0);
+    top: 0;
+    left: 0;
+}
+.bg-grey {
+    background: rgba(0,0,0,0.025);
+    width: 100%;
+}
+.wrapper {
+    width: 90%;
+    max-width: 992px;
+    margin: auto;
+    padding-bottom: 90px;
+}
+.wrapper.hidden {
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+nav.menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 45px 45px 0 45px;
+}
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+nav.menu ul > li {
+    padding: 1em 0.5em;
+}
+.feature-img {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.feature-img img {
+    width: 100%;
+}
+.page-title {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.site-footer {
+    background: #181818;
+    color: #f5f5f5;
+}
+.site-footer ul {
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+.f-w-6 {
+    width: 50%;
+}
+.f-w-4 {
+    width: 33%;
+}
+.f-w-3 {
+    width: 25%;
+}
+.blog-thumbnail {
+    display: block;
+    margin: auto;
+}
+.recruit-thumbnail {
+    display: block;
+    margin: auto;
+    border: 5px solid #00c1d1;
+    border-radius: 20px;
+}
+.page-title h1 {
+    padding: 1em;
+    border: 5px solid #f5f5f5;
+    border-radius: 20px;
+}
+.cta-btn {
+    display: block;
+    max-width: 190px;
+    border: 5px solid #00c1d1;
+    background-color: #ffffff;
+    color: #00c1d1;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 90px auto; */
+    padding: 0.75em 0.5em;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: #dadada 3px 3px 5px;
+}
+.cta-btn::after {
+    content: ">";
+    margin-left: 1em;
+}
