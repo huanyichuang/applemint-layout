@@ -72,6 +72,11 @@ h2.section-header::after {
 .text-center {
     text-align: center;
 }
+.logo {
+    position: absolute;
+    z-index: 1;
+    padding: 45px;
+}
 nav.menu {
     position: absolute;
     left: 0;
@@ -119,6 +124,13 @@ nav.menu ul > li {
 .flex {
     display: flex;
 }
+.main-menu {
+    position: absolute;
+    width: 100%;
+}
+.main-menu > .menu-toggle {
+    justify-self: flex-end;
+}
 .f-w-6 {
     width: 50%;
 }
@@ -161,4 +173,28 @@ nav.menu ul > li {
 .cta-btn::after {
     content: ">";
     margin-left: 1em;
+}
+
+@media screen and (max-width: 768px){
+    .text-bg {
+        left: 0;
+        right: 0;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+    nav.menu {
+        padding: 0;
+    }
+    nav button {
+        justify-self: flex-end;
+    }
+    nav.menu ul {
+        display: none;
+    }
+    .f-w-3,
+    .f-w-4,
+    .f-w-6 {
+        width: 100%;
+    }
 }

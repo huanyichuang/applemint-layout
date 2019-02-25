@@ -6,30 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <header>
-        <nav class="menu flex">
-        <div id="logo">
-            <img src="https://via.placeholder.com/80" alt="">
-        </div>
-        <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Recruitments</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Discovery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <button>Toggle</button>
-        </nav>
+        <div class="flex main-menu">
+            <div id="logo" class="logo">
+                <img src="https://via.placeholder.com/80" alt="">
+            </div>
+            <nav class="menu flex">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Recruitments</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Discovery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">Toggle</button>
+        </div><!-- .flex -->
         <div class="feature-img text-center" style="background-image:url('./img/services.jpg');">
             <div class="page-title">
                 <h1>applemint</h1>
                 <button class="cta-btn">日本語</button>
             </div>
-            <img src="" alt="">
-            
         </div>
     </header>
     <div class="primary-content">
