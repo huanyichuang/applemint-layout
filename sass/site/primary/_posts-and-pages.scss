@@ -1,0 +1,51 @@
+.sticky {
+	display: block;
+}
+
+:not(.page) .post,
+:not(.page) .page {
+	margin: 0 0 1.5em;
+}
+.bg-light {
+	background-color: $color__background-light;
+	color: $color__text-light;
+}
+
+.bg-dark {
+	background-color: $color__background-dark;
+	color: $color__text-dark;
+}
+
+.bg-highlight {
+	background-color: $color__background-highlight;
+	color: $color__text-dark;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.content-wrap {
+	margin: auto;
+	max-width: 992px;
+}
+.site-footer {
+	background-color: $color__background-dark;
+	color: $color__text-dark;
+}
+
+@media screen and (min-width: $screen__break-point-xl){
+	// .content-wrap {
+	// 	padding: 0 10%;
+	// }
+}
