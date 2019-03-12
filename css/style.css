@@ -230,7 +230,10 @@ nav.menu ul a {
     content: ">";
     margin-left: 1em;
 }
-
+.content-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 @media screen and (max-width: 768px){
     .text-bg {
         left: 0;
