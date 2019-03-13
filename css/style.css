@@ -29,10 +29,13 @@ h3 {
     text-align: center;
 	text-transform: uppercase;
 }
+ul {
+    padding: 0;
+}
 .section-header p {
 	color: #000c36;
 font-size: 1em;
-line-height: 1;
+line-height: 3;
 text-align: center;
 	margin-top: 2em;
 }
@@ -115,11 +118,60 @@ line-height: 2.25;
 	-ms-align-items: center;
 	align-items: center;
 }
-/*
-.main-menu > .menu-toggle {
+
+.menu-toggle {
+    display: block;
     justify-self: flex-end;
+    background: rgba(0,0,0,0);
+    border: none;
 }
-*/
+.menu-toggle > div {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 4px;
+    background: #303030;
+}
+.hamburger-menu {
+    display: block;
+    position: fixed;
+    right: 0px;
+    width: 0;
+    height: 100vh;
+    background: #f5f5f5;
+    z-index: 1000;
+    transition: width 0.5s, padding 0.5s;
+    -webkit-transition: width 0.5s, padding 0.5s;
+}
+.hamburger-menu.toggled {
+    padding: 2em;
+    width: 100vw;
+}
+.hamburger-menu > .menu-toggle {
+    margin-left: auto;
+}
+.hamburger-menu > .menu-toggle div {
+    transition: transform 0.5s, opacity 0.5s;
+}
+.hamburger-menu > .menu-toggle div:nth-child(1) {
+    transform-origin: 0% 0%;
+}
+.hamburger-menu > .menu-toggle div:nth-child(2) {
+    opacity: 1;
+}
+.hamburger-menu > .menu-toggle div:nth-child(3) {
+    transform-origin: 0% 100%;
+}
+
+.hamburger-menu.toggled > .menu-toggle div:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburger-menu.toggled > .menu-toggle div:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.toggled > .menu-toggle div:nth-child(3) {
+    transform: rotate(-45deg) translate(-3px,4px);
+}
+
 /* Navbar height:
 background-color: #ffffff;
 height: 87px;
@@ -131,8 +183,12 @@ nav.menu {
 	width: 100%;
     z-index: 9999;
 }
-nav.menu ul {
+nav ul {
     list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+nav.menu ul {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
@@ -172,8 +228,16 @@ nav.menu ul a {
     position: absolute;
 }
 .site-footer {
+    padding-top: 5em;
     background: #181818;
     color: #f5f5f5;
+}
+.site-footer p {
+    line-height: 1.5;
+}
+.social-links > img {
+    border-radius: 50%;
+    margin: 1.5em 1.25em 0 1.25em;
 }
 .site-footer ul {
     list-style: none;
@@ -197,7 +261,7 @@ nav.menu ul a {
 .blog-title {
 	margin: 25px;
 }
-.blog-excerpt {
+.entry-content {
 	margin: 25px;
 }
 .recruit-thumbnail {
@@ -234,6 +298,10 @@ nav.menu ul a {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+/* Toggle Menu */
+
+
 @media screen and (max-width: 768px){
     .text-bg {
         left: 0;
