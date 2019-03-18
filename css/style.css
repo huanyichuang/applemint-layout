@@ -230,7 +230,10 @@ nav.menu ul a {
     content: ">";
     margin-left: 1em;
 }
-
+img.avatar {
+    border: 3px solid #00c1d1;
+    border-radius: 75px;
+}
 @media screen and (max-width: 768px){
     .text-bg {
         left: 0;
