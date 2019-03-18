@@ -171,6 +171,16 @@ line-height: 2.25;
 .hamburger-menu.toggled > .menu-toggle div:nth-child(3) {
     transform: rotate(-45deg) translate(-3px,4px);
 }
+.hamburger-menu > nav > ul > li {
+    color: #303030;
+    font-size: 2em;
+    text-decoration: none;
+}
+.hamburger-menu > nav > ul a,
+.hamburger-menu > nav > ul a:visited {
+    color: #303030;
+    text-decoration: none;
+}
 
 /* Navbar height:
 background-color: #ffffff;
@@ -245,6 +255,11 @@ nav.menu ul a {
 .flex {
     display: flex;
 }
+.flex-col.flex-wrap {
+    flex-flow: column wrap;
+    height: 85vh;
+}
+
 .f-w-6 {
     width: 50%;
 }
@@ -300,7 +315,26 @@ nav.menu ul a {
 }
 
 /* Toggle Menu */
+.sub-menu {
+    height: 100%;
+}
+.sub-menu li a,
+.sub-menu li a:visited {
+    text-decoration: none;
+    color: #303030;
+}
+.sub-menu > li {
+    font-size: 1rem;
+    line-height: 2.25;
+}
+.sub-menu + a {
 
+}
+.sub-menu li a::before {
+    content: '>';
+    color: #00c1d1;
+    margin-right: 1em;
+}
 
 @media screen and (max-width: 768px){
     .text-bg {
@@ -309,6 +343,15 @@ nav.menu ul a {
     }
     .flex {
         flex-wrap: wrap;
+    }
+    .flex-col.flex-wrap {
+        height: auto;
+    }
+    .sub-menu {
+        height: 0;
+    }
+    .sub-menu > li {
+        display: none;
     }
 	.logo {
 		padding: 0;
@@ -336,6 +379,7 @@ nav.menu ul a {
         display: none;
     }
 */
+
 	.feature-img {
 		height: 60vh;
 	}

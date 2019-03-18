@@ -9,5 +9,13 @@
                 $(".hamburger-menu").addClass(" toggled");
             }
         });
+        $("ul.flex.flex-col.flex-wrap > li").on( "click", function(e){
+            console.log(e.target);
+            if(e.target.parent().children(".sub-menu").hasClass("toggled")) {
+                e.target.parent().children(".sub-menu").removeClass("toggled");
+            } else {
+                e.target.parent().children(".sub-menu").addClass("toggled");
+            }
+        });
     });
 })(jQuery);
