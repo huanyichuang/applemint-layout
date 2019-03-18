@@ -309,12 +309,10 @@ nav.menu ul a {
     content: ">";
     margin-left: 1em;
 }
-<<<<<<< HEAD
 img.avatar {
     border: 3px solid #00c1d1;
     border-radius: 75px;
 }
-=======
 .content-section {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -342,7 +340,6 @@ img.avatar {
     margin-right: 1em;
 }
 
->>>>>>> 7a10a66d40e3465c4f1deec4123967cfc7fd0585
 @media screen and (max-width: 768px){
     .text-bg {
         left: 0;
